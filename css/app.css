@@ -1,0 +1,15 @@
+.blue-back{
+	background-color: #007EA3;
+	color: #fff;
+}
+
+.margin-elements{
+	margin-top: 20px;
+}
+
+.title-app{
+	float: left; 
+	top: 22px;
+	 position: relative; 
+	 color:#d2db0e
+}
