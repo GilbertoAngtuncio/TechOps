@@ -1,0 +1,16 @@
+{
+ "marketing_questions": [
+
+   {
+      "num":1,
+      "question":"Do you like the...?",
+      "feedback":"Yep, but remember when...",
+      "final-feedback":"In the answer 1, you select the option that said...",
+      "option-a":"Yes",
+      "option-b":"Nope",
+      "option-c":"Maybe",
+      "option-d":"Gotcha",
+   }
+
+]
+}

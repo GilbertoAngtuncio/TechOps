@@ -11,5 +11,53 @@
 	float: left; 
 	top: 22px;
 	 position: relative; 
-	 color:#d2db0e
+	 color:#d2db0e;
 }
+
+.fondo{
+/*	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px; */
+background: #ffffff;
+-webkit-box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
+-moz-box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
+box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
+z-index: 1;
+margin: 6px;
+padding:6px;
+  top: 4px;
+    left: -3px;
+    z-index:0;
+}
+
+.fondo-hoja{
+/*	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px; */
+width: 95%;
+height: 95%;
+background-position: center bottom;
+z-index: 2;
+background: #222;
+-webkit-box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
+-moz-box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
+box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
+			transform: skew(-5deg);
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007EA3;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+      background: #fff;
+    color: #007EA3; 
+}
+
+.progress {background: rgba(255, 255, 255, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; height: 20px;}
+.progress-bar-custom {background: rgba(210, 219, 14, 1);}
+
