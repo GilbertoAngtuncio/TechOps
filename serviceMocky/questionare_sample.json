@@ -1,0 +1,38 @@
+{question:[
+  question:
+    {enunciation:"Need the application access codes?", 
+     answer:
+      [
+        {aswer:"yes, however we already have access codes", value:1, solution:"ok"}
+        {aswer:"no", value:1, solution:"ok"}, 
+        {aswer:"yes, but we don't have yet", value:2, solution: "contact the resposible area"}, 
+        
+      ]
+    }
+    question:
+    {enunciation:"Need the application youtube promo?", 
+     answer:
+      [
+        {aswer:"yes, however was done", value:1, solution:"ok"}
+        {aswer:"no", value:1, solution:"ok"}, 
+        {aswer:"yes, but we don't have yet", value:2, solution: "contact the resposible area"}, 
+      ]
+    }
+    question:
+    {enunciation:"Need the application ecommerce link?", 
+     answer:
+      [
+        {aswer:"yes, however was done", value:1, solution:"ok"}
+        {aswer:"no", value:1, solution:"ok"}, 
+        {aswer:"yes, but we don't have yet", value:2, solution: "contact the resposible area"}, 
+      ]
+    }
+/*  question:    if we will make diferrent types of questions
+    {enunciation:"This is a sample of boolean question, can you answer me?", 
+     answer:
+      [
+        {aswer:"True", correct:False}, 
+        {aswer:"False", correct:True}, 
+      ]
+    }*/
+]}

@@ -1,3 +1,9 @@
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
 .blue-back{
 	background-color: #007EA3;
 	color: #fff;
@@ -12,4 +18,22 @@
 	top: 22px;
 	 position: relative; 
 	 color:#d2db0e
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .header {
+  flex: 0 1 auto;
+}
+
+.box .content {
+  flex: 1 1 auto;
+}
+
+.box .footer {
+  flex: 0 1 40px;
 }
