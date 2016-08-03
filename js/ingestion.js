@@ -21,24 +21,25 @@ var template_questions =
 '<div class="question-{{num}}">'+
 '<h4 class="pregunta-{{num}}">{{question}}</h4>'+
 '<p>Responde con la opción que consideres correcta: </p>'+
-'<div class="option-{{num}}">'+
-'<div class="a">{{option-a}}</div>'+
-'<div class="b">{{option-b}}</div>'+
-'<div class="c">{{option-c}}</div>'+
-'<div class="d">{{option-d}}</div>'+
-'</div>'+
+'<ul class="option-{{num}}">'+
+'<li class="a">{{option-a}}</li>'+
+'<li class="b">{{option-b}}</li>'+
+'<li class="c">{{option-c}}</li>'+
+'<li class="d">{{option-d}}</li>'+
+'</ul>'+
 '<div class="feedback">'+
 '{{feedback}}'+
 '</div>'+
 '<div class="final-feedback">'+
 '{{final-feedback}}'+
 '</div>'+
-'<div class="siguiente_{{num}}">Next question</div>'+
+'<div class="btn btn-success orange siguiente_{{num}}">Next question</div>'+
 '</div>'+
 '{{/marketing_questions}}';
 
 var html = Mustache.to_html(template_questions, data);
 $('.marketing_questions').html(html);
+
 
 /*$('.ios_url_app, .android_url_app, .booktrailer, .url_venta_ecommerce, .url_venta_ebook, .url_guia_del_profesor, .booktrailer, .miniaturas_publicacion').tooltip({
 			track: true,
@@ -62,8 +63,8 @@ $('.marketing_questions').html(html);
 
 /////////////////////***********************/////////////////////////////////////////***********************////////////////////
 /////////////////////***********************/////////////////////////////////////////***********************////////////////////
-catalogoSerie( '.descripcion-titulo-1', '.cerrar-descripcion-titulo-1', '#cerrar-ventana-thumb-1', ".miniaturas_publicacion-1", "#block-1", ".booktrailer-1", "#block-thumb-1", "#cerrar-ventana-1", '.libro-1', "#tabs-min-1"   )
 
+//catalogoSerie( '.descripcion-titulo-1', '.cerrar-descripcion-titulo-1', '#cerrar-ventana-thumb-1', ".miniaturas_publicacion-1", "#block-1", ".booktrailer-1", "#block-thumb-1", "#cerrar-ventana-1", '.libro-1', "#tabs-min-1"   )
 
 })
 

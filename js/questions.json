@@ -1,0 +1,60 @@
+{
+ "marketing_questions": [
+
+   {
+      "num":1,
+      "question":"Do you like the...?",
+      "feedback":"Yep, but remember when...",
+      "final-feedback":"In the answer 1, you select the option that said...",
+      "option-a":"Yes",
+      "option-b":"Nope",
+      "option-c":"Maybe",
+      "option-d":"Gotcha"
+   },
+
+    {
+      "num":2,
+      "question":"Do you like the...?",
+      "feedback":"Yep, but remember when...",
+      "final-feedback":"In the answer 1, you select the option that said...",
+      "option-a":"Yes",
+      "option-b":"Nope",
+      "option-c":"Maybe",
+      "option-d":"Gotcha"
+   },
+
+    {
+      "num":3,
+      "question":"Do you like the...?",
+      "feedback":"Yep, but remember when...",
+      "final-feedback":"In the answer 1, you select the option that said...",
+      "option-a":"Yes",
+      "option-b":"Nope",
+      "option-c":"Maybe",
+      "option-d":"Gotcha"
+   },
+
+    {
+      "num":4,
+      "question":"Do you like the...?",
+      "feedback":"Yep, but remember when...",
+      "final-feedback":"In the answer 1, you select the option that said...",
+      "option-a":"Yes",
+      "option-b":"Nope",
+      "option-c":"Maybe",
+      "option-d":"Gotcha"
+   },
+
+    {
+      "num":5,
+      "question":"Do you like the...?",
+      "feedback":"Yep, but remember when...",
+      "final-feedback":"In the answer 1, you select the option that said...",
+      "option-a":"Yes",
+      "option-b":"Nope",
+      "option-c":"Maybe",
+      "option-d":"Gotcha"
+   }
+
+]
+}
