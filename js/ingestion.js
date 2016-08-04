@@ -18,14 +18,14 @@ $( document ).ready(function() {
 var template_questions = 
 
 '{{#marketing_questions}}'+
-'<div class="question-{{num}}">'+
-'<h4 class="pregunta-{{num}}">{{question}}</h4>'+
+'<div id="question-{{num}}" order="{{num}}" class="question showQuestion">'+
+'<h4 class="pregunta-{{num}}">{{num}}. {{question}}</h4>'+
 '<p>Responde con la opción que consideres correcta: </p>'+
-'<ul class="option-{{num}}">'+
-'<li class="a">{{option-a}}</li>'+
-'<li class="b">{{option-b}}</li>'+
-'<li class="c">{{option-c}}</li>'+
-'<li class="d">{{option-d}}</li>'+
+'<ul id="aswer-options-{{num}}" class="option-{{num}}">'+
+'<li class="a"><input type="radio" value="{{option-a}}" name="alternative-{{num}}" checked> {{option-a}}</input></li>'+
+'<li class="b"><input type="radio" value="{{option-b}}" name="alternative-{{num}}"> {{option-b}}</input></li>'+
+'<li class="c"><input type="radio" value="{{option-c}}" name="alternative-{{num}}"> {{option-c}}</input></li>'+
+'<li class="d"><input type="radio" value="{{option-d}}" name="alternative-{{num}}"> {{option-d}}</input></li>'+
 '</ul>'+
 '<div class="feedback">'+
 '{{feedback}}'+
@@ -33,13 +33,14 @@ var template_questions =
 '<div class="final-feedback">'+
 '{{final-feedback}}'+
 '</div>'+
-'<div class="btn btn-success orange siguiente_{{num}}">Next question</div>'+
+'<button class="btn btn-success orange siguiente_{{num}}" onclick="goToNextQuestion({{num}})">Next question</button>'+
 '</div>'+
 '{{/marketing_questions}}';
 
 var html = Mustache.to_html(template_questions, data);
-$('.marketing_questions').html(html);
-
+$.cookie( "numQuestions", data.marketing_questions.length );
+$('div.marketing_questions').html( html );
+$('#question-1').addClass("question_active");
 
 /*$('.ios_url_app, .android_url_app, .booktrailer, .url_venta_ecommerce, .url_venta_ebook, .url_guia_del_profesor, .booktrailer, .miniaturas_publicacion').tooltip({
 			track: true,

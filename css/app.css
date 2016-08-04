@@ -93,7 +93,11 @@ box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
 .progress-bar-custom {background: rgba(210, 219, 14, 1);}
 
 .marketing_questions{
-  color: #222;
+    color: #222;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
 }
 
 .green{
@@ -105,3 +109,63 @@ box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
   border: 1px solid #FFB81C;
 }
 
+li{
+    list-style-type: none;
+}
+
+.question {
+    display: none;
+    alpha: 0;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+    width: 100%;
+}
+
+.question_active{
+    display: block;
+    alpha: 1;
+}
+
+/*
+==============================================
+showQuestion
+==============================================
+*/
+.showQuestion{
+    animation-name: showQuestion;
+    -webkit-animation-name: showQuestion;  
+
+    animation-duration: 0.5s;   
+    -webkit-animation-duration: 0.5s;
+
+    animation-timing-function: ease; 
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important; 
+}
+
+@keyframes showQuestion {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes showQuestion {
+    0% {
+        -webkit-transform: translateX(150%);
+        opacity: 0.5;
+    }           
+    100% {
+        -webkit-transform: translateX(0%);
+        opacity: 1;
+    }
+}
