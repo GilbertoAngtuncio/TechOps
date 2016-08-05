@@ -22,10 +22,10 @@ var template_questions =
 '<h4 class="pregunta-{{num}}">{{num}}. {{question}}</h4>'+
 '<p>Responde con la opción que consideres correcta: </p>'+
 '<ul id="aswer-options-{{num}}" class="option-{{num}}">'+
-'<li class="a"><input type="radio" value="{{option-a}}" name="alternative-{{num}}" checked> {{option-a}}</input></li>'+
-'<li class="b"><input type="radio" value="{{option-b}}" name="alternative-{{num}}"> {{option-b}}</input></li>'+
-'<li class="c"><input type="radio" value="{{option-c}}" name="alternative-{{num}}"> {{option-c}}</input></li>'+
-'<li class="d"><input type="radio" value="{{option-d}}" name="alternative-{{num}}"> {{option-d}}</input></li>'+
+'<li class="a"><input type="radio" value="{{option-a.value}}" name="alternative-{{num}}" checked> {{option-a.aswer}}</input></li>'+
+'<li class="b"><input type="radio" value="{{option-b.value}}" name="alternative-{{num}}"> {{option-b.aswer}}</input></li>'+
+'<li class="c"><input type="radio" value="{{option-c.value}}" name="alternative-{{num}}"> {{option-c.aswer}}</input></li>'+
+'<li class="d"><input type="radio" value="{{option-d.value}}" name="alternative-{{num}}"> {{option-d.aswer}}</input></li>'+
 '</ul>'+
 '<div class="feedback">'+
 '{{feedback}}'+
