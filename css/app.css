@@ -1,3 +1,13 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+
 .blue-back{
 	background-color: #007EA3;
 	color: #fff;
@@ -113,15 +123,27 @@ li{
     list-style-type: none;
 }
 
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .header {
+  flex: 0 1 auto;
+}
+
+.box .content {
+  flex: 1 1 auto;
+}
+
+.box .footer {
+  flex: 0 1 40px;
+}
+
 .question {
     display: none;
     alpha: 0;
-    transition: all 0.4s ease 0s;
-    -webkit-transition: opacity .15s ease-in-out;
-    -moz-transition: opacity .15s ease-in-out;
-    -ms-transition: opacity .15s ease-in-out;
-    -o-transition: opacity .15s ease-in-out;
-    transition: opacity .15s ease-in-out;
     width: 100%;
 }
 

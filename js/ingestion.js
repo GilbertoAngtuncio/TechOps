@@ -41,6 +41,7 @@ var html = Mustache.to_html(template_questions, data);
 $.cookie( "numQuestions", data.marketing_questions.length );
 $('div.marketing_questions').html( html );
 $('#question-1').addClass("question_active");
+$('#question_number_progress').html( '1 / '+ data.marketing_questions.length );
 
 /*$('.ios_url_app, .android_url_app, .booktrailer, .url_venta_ecommerce, .url_venta_ebook, .url_guia_del_profesor, .booktrailer, .miniaturas_publicacion').tooltip({
 			track: true,
