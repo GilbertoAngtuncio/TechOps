@@ -3,46 +3,45 @@
 
    {
       "num":1,
-      "question":"Marketing - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"Tool we use on our first visit , it is our cover letter that allows us to show the features and benefits of our product",
+      "feedback": "Remember that the product presentation allows you to show the main features and benefits of our products, it is important that before you visit your client review and learn the main points of this tool. This presentation can be downloaded at: ...",
+      "final-feedback":"Remember that the product presentation allows you to show the main features and benefits of our products, it is important that before you visit your client review and learn the main points of this tool. This presentation can be downloaded at: ...",
+      "option-a":{"aswer":"Brief Data", "value":4},
+      "option-b":{"aswer":"Product presentation", "value":3},
+      "option-c":{"aswer":" I do not know ", "value":2},
+      "option-d":{"aswer":"Success Stories", "value":1}
    },
 
     {
       "num":2,
-      "question":"Marketing - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"High-impact brief that show details about our customers, their needs and what was the solution that we offered",
+      "feedback":"The success stories are high-impact brief that show the results of our product implemented in various clients , it is important that you study and present the customer to show how we can meet your needs. These success stories are given at : ...",
+      "final-feedback":"The success stories are high-impact brief that show the results of our product implemented in various clients , it is important that you study and present the customer to show how we can meet your needs. These success stories are given at : ...",
+      "option-a":{"aswer":"Brief Data", "value":4},
+      "option-b":{"aswer":"Success Stories", "value":3},
+      "option-c":{"aswer":"Product presentation ", "value":2},
+      "option-d":{"aswer":"Infographic", "value":1}
    },
 
     {
       "num":3,
-      "question":"Marketing - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"What do you think is the best way to present a product to a customer ?",
+      "feedback":"The process can be flexible , however , there are important points that can not be overlooked , such as :Investigate the customer and their needs , select the product that support these needs , schedule an appointment , show  product presentation ( with marketing materials ) , Resolve questions or comments.",
+      "final-feedback":"The process can be flexible , however , there are important points that can not be overlooked , such as :Investigate the customer and their needs , select the product that support these needs , schedule an appointment , show  product presentation ( with marketing materials ) , Resolve questions or comments.",
+      "option-a":{"aswer":"Investigate the customer and their needs , select the product that support these needs , schedule an appointment , show  product presentation ( with marketing materials )", "value":4},
+      "option-b":{"aswer":"Walks-ins, show the product presentation, offer a pilot", "value":3},
+      "option-c":{"aswer":"Talk by phone , and talk about our product", "value":2},
+      "option-d":{"aswer":"Investigate the customer and their needs , select the product that support these needs , schedule an appointment , show  product presentation ( with marketing materials ) and offer a pilot", "value":1}
    },
-
     {
       "num":4,
-      "question":"Marketing - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"Could you access to technical support of digital products through the chat that appears on the product site ?",
+      "feedback": "In each digital product´s website, there is a help section that will answer your basic questions, however , if the answer you was looking for there, you can use our help desk sending and email to support@pearson.com",
+      "final-feedback":"In each digital product´s website, there is a help section that will answer your basic questions, however , if the answer you was looking for there, you can use our help desk sending and email to support@pearson.com",
+      "option-a":{"aswer":"No, our support is through  google search" , "value":1},
+      "option-b":{"aswer":"Yes, with a single click technical support will help me to solve my doubts", "value":1},
+      "option-c":{"aswer":" we don´t have technical support for digital products", "value":2},
+      "option-d":{"aswer":"Technical support is through our help desk. You should send an email to soporte@pearson.com", "value":4}
    }
 
 ],
@@ -50,47 +49,37 @@
 
    {
       "num":1,
-      "question":"Technology - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"It´s a 'must' that the client  take the use training for our digital products ?",
+      "feedback":"It is important that the client take a face to face o virtual training of our products, in order that him/she could take full advantage of all the benefits.  Its advisable take it at the beginning of the project.",
+      "final-feedback":"It is important that the client take a face to face o virtual training of our products, in order that him/she could take full advantage of all the benefits.  Its advisable take it at the beginning of the project.",
+      "option-a":{"aswer":"No, our products are very simple to use.", "value":1},
+      "option-b":{"aswer":"It is advisable for a successful implementation", "value":2},
+      "option-c":{"aswer":"Just in case the teacher ask for", "value":3},
+      "option-d":{"aswer":"Yes, it is mandatory", "value":4}
    },
 
     {
       "num":2,
-      "question":"Technology - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"All our products have a certain effect/time , so doubts should be resolved throughout all the project",
+      "feedback":"Digital products has a valid , usually, during the course  (annual , half-yearly , quarterly , etc. ) is important that we have customer service during all the project in order to have happy clients, and buybacks easily.",
+      "final-feedback":"Digital products has a valid , usually, during the course  (annual , half-yearly , quarterly , etc. ) is important that we have customer service during all the project in order to have happy clients, and buybacks easily.",
+      "option-a":{"aswer":"All our products have a certain effect/time , so doubts should be resolved throughout all the project", "value":4},
+      "option-b":{"aswer":"Yes , so sales team has to make regular visits at the beginning of the project", "value":3},
+      "option-c":{"aswer":"No, for there is technical  support", "value":2},
+      "option-d":{"aswer":"I don´t know", "value":1}
    },
-
-    {
+   {
       "num":3,
-      "question":"Technology - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
-   },
-
-    {
-      "num":4,
-      "question":"Technology - Do you like the...?",
-      "feedback":"Yep, but remember when...",
-      "final-feedback":"In the answer 1, you select the option that said...",
-      "option-a":{"aswer":"Yes", "value":4},
-      "option-b":{"aswer":"Nope", "value":3},
-      "option-c":{"aswer":"Maybe", "value":2},
-      "option-d":{"aswer":"Gotcha", "value":1}
+      "question":"Could you access to technical support of digital products through the chat that appears on the product site ?",
+      "feedback": "In each digital product´s website, there is a help section that will answer your basic questions, however , if the answer you was looking for there, you can use our help desk sending and email to support@pearson.com",
+      "final-feedback":"In each digital product´s website, there is a help section that will answer your basic questions, however , if the answer you was looking for there, you can use our help desk sending and email to support@pearson.com",
+      "option-a":{"aswer":"No, our support is through  google search" , "value":1},
+      "option-b":{"aswer":"Yes, with a single click technical support will help me to solve my doubts", "value":1},
+      "option-c":{"aswer":" we don´t have technical support for digital products", "value":2},
+      "option-d":{"aswer":"Technical support is through our help desk. You should send an email to soporte@pearson.com", "value":4}
    }
+
+  
 
 ],
 "commerce_questions": [

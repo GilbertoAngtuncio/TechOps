@@ -18,7 +18,7 @@ function goToNextQuestion(cur_question_number){
       question_number_progress.html( progress+' / '+currNumQuestions );
    }else{
       num_aswers = aswers.length;      
-      sugestion = "strongly not recommended"
+      sugestion = "strongly recommended to sale and ready to show in your institution or classroom"
       if( final_result > 12 )
       {
         sugestion = "strongly recommended";
@@ -31,7 +31,45 @@ function goToNextQuestion(cur_question_number){
           };
         }
       };
-      $("div.marketing_questions").html( "<div><h3>Congratulations</h3><p>Your questionare result is "+final_result+" and this means that your product is "+sugestion+" to be sold.</p></div>" );
+      $("div.marketing_questions").html( "<div><h3>Congratulations</h3><p>Your questionare result is <strong>"+final_result+"</strong> and this means that your product is <strong>"+sugestion+"</strong> to be sold.</p></div>" );
+   }
+   
+}
+
+div_progress_bar_tech = $("div.progress-bar-tech");
+question_number_progress_tech = $('#question_number_progress_tech');
+progress_text_tech = $(div_progress_bar_tech).first();
+
+function goToNextQuestionTech(cur_question_number_tech){
+   curr_question_tech = $('#question-tech-'+cur_question_number_tech);
+   answers_tech[cur_question_number_tech] = $('input[name=alternative-'+cur_question_number_tech+']:checked', curr_question_tech).val();
+   final_result_tech += parseInt(answers_tech[cur_question_number_tech]);
+   console.log("respondida a questão: " + cur_question_number_tech + ", agora o valor das respostas é: "+answers_tech);
+   curr_question_tech.removeClass("question_tech_active");
+   curr_progress_tech = Math.floor( (progress_tech / currNumQuestionsTech)*100 );
+   div_progress_bar_tech.css("width", curr_progress_tech+"%");
+   progress_text_tech.html(curr_progress_tech+"% Complete");
+   next_question_tech = curr_question_tech.next();
+   if(next_question_tech.length){
+      next_question_tech.addClass("question_tech_active");
+      progress_tech++;
+      question_number_progress_tech.html( progress_tech+' / '+currNumQuestionsTech );
+   }else{
+      num_aswers_tech = answers_tech.length;      
+      sugestion = "strongly recommended to sale and ready to show in your institution or classroom"
+      if( final_result_tech > 12 )
+      {
+        sugestion_tech = "strongly recommended";
+      }else{
+        if (final_result_tech > 8) {
+          sugestion_tech = "recommended";
+        }else{
+          if (final_result_tech > 4) {
+            sugestion_tech = "not recommended"
+          };
+        }
+      };
+      $("div.tech_questions").html( "<div><h3>Congratulations</h3><p>Your questionare result is <strong>"+final_result_tech+"</strong> and this means that your product is <strong>"+sugestion_tech+"</strong> to be sold.</p></div>" );
    }
    
 }

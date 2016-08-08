@@ -99,8 +99,8 @@ box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
     color: #007EA3; 
 }
 
-.progress {background: rgba(255, 255, 255, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; height: 20px;}
-.progress-bar-custom {background: rgba(210, 219, 14, 1);}
+.progress, .progress-tech {background: rgba(255, 255, 255, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; height: 20px;}
+.progress-bar-custom, .progress-bar-tech {background: rgba(210, 219, 14, 1);}
 
 .marketing_questions{
     color: #222;
@@ -109,6 +109,15 @@ box-shadow: 10px 10px 45px -6px rgba(191,191,191,1);
     justify-content: center; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
 }
+
+.tech_questions{
+  color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .green{
   color:#d2db0e;
@@ -148,6 +157,11 @@ li{
 }
 
 .question_active{
+    display: block;
+    alpha: 1;
+}
+
+.question_tech_active{
     display: block;
     alpha: 1;
 }
