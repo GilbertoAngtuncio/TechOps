@@ -20,7 +20,7 @@ var template_questions =
 '{{#marketing_questions}}'+
 '<div id="question-{{num}}" order="{{num}}" class="question showQuestion">'+
 '<h4 class="pregunta-{{num}}">{{num}}. {{question}}</h4>'+
-'<p>Responde con la opción que consideres correcta: </p>'+
+'<p>Select the answer option that you consider correct: </p>'+
 '<ul id="aswer-options-{{num}}" class="option-{{num}}">'+
 '<li class="a"><input type="radio" value="{{option-a.value}}" name="alternative-{{num}}" checked> {{option-a.aswer}}</input></li>'+
 '<li class="b"><input type="radio" value="{{option-b.value}}" name="alternative-{{num}}"> {{option-b.aswer}}</input></li>'+
@@ -37,11 +37,45 @@ var template_questions =
 '</div>'+
 '{{/marketing_questions}}';
 
+///Objeto para el libro
+var template_tech = 
+
+'{{#technology_questions}}'+
+'<div id="question-tech-{{num}}" order="{{num}}" class="question showQuestion">'+
+'<h4 class="pregunta-{{num}}">{{num}}. {{question}}</h4>'+
+'<p>Select the answer option that you consider correct: </p>'+
+'<ul id="aswer-options-{{num}}" class="option-{{num}}">'+
+'<li class="a"><input type="radio" value="{{option-a.value}}" name="alternative-{{num}}" checked> {{option-a.aswer}}</input></li>'+
+'<li class="b"><input type="radio" value="{{option-b.value}}" name="alternative-{{num}}"> {{option-b.aswer}}</input></li>'+
+'<li class="c"><input type="radio" value="{{option-c.value}}" name="alternative-{{num}}"> {{option-c.aswer}}</input></li>'+
+'<li class="d"><input type="radio" value="{{option-d.value}}" name="alternative-{{num}}"> {{option-d.aswer}}</input></li>'+
+'</ul>'+
+'<div class="feedback">'+
+'{{feedback}}'+
+'</div>'+
+'<div class="final-feedback">'+
+'{{final-feedback}}'+
+'</div>'+
+'<button class="btn btn-success orange siguiente_{{num}}" onclick="goToNextQuestionTech({{num}})">Next question</button>'+
+'</div>'+
+'{{/technology_questions}}';
+
 var html = Mustache.to_html(template_questions, data);
 $.cookie( "numQuestions", data.marketing_questions.length );
+
+
+var html_tech = Mustache.to_html(template_tech, data);
+$.cookie( "numQuestionsTech", data.technology_questions.length );
+
 $('div.marketing_questions').html( html );
+$('div.tech_questions').html( html_tech );
+
 $('#question-1').addClass("question_active");
 $('#question_number_progress').html( '1 / '+ data.marketing_questions.length );
+
+$('#question-tech-1').addClass("question_tech_active");
+$('#question_number_progress_tech').html( '1 / '+ data.technology_questions.length );
+
 
 /*$('.ios_url_app, .android_url_app, .booktrailer, .url_venta_ecommerce, .url_venta_ebook, .url_guia_del_profesor, .booktrailer, .miniaturas_publicacion').tooltip({
 			track: true,
