@@ -2,7 +2,6 @@
 //gilberto.angtuncio@pearson.com
 //gilberto.unam@gmail.com
 
-
 $( document ).ready(function() {
 
 
@@ -38,7 +37,8 @@ var template_questions =
 '{{/marketing_questions}}';
 
 var html = Mustache.to_html(template_questions, data);
-$.cookie( "numQuestions", data.marketing_questions.length );
+currNumQuestions = data.marketing_questions.length;
+//$.cookie( "numQuestions", data.marketing_questions.length );
 $('div.marketing_questions').html( html );
 $('#question-1').addClass("question_active");
 $('#question_number_progress').html( '1 / '+ data.marketing_questions.length );

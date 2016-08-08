@@ -1,6 +1,3 @@
-aswers = {};
-progress = 1;
-final_result = 0;
 div_progress_bar = $("div.progress-bar");
 question_number_progress = $('#question_number_progress');
 progress_text = $(div_progress_bar).first();
@@ -11,14 +8,14 @@ function goToNextQuestion(cur_question_number){
    final_result += parseInt(aswers[cur_question_number]);
    console.log("respondida a questão: " + cur_question_number + ", agora o valor das respostas é: "+aswers);
    curr_question.removeClass("question_active");
-   curr_progress = (progress / $.cookie("numQuestions"))*100;
+   curr_progress = (progress / currNumQuestions)*100;
    div_progress_bar.css("width", curr_progress+"%");
    progress_text.html(curr_progress+"% Complete");
    next_question = curr_question.next();
    if(next_question.length){
       next_question.addClass("question_active");
       progress++;
-      question_number_progress.html( progress+' / '+$.cookie("numQuestions") );
+      question_number_progress.html( progress+' / '+currNumQuestions );
    }else{
       num_aswers = aswers.length;      
       sugestion = "strongly not recommended"
