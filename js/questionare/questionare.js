@@ -8,7 +8,7 @@ function goToNextQuestion(cur_question_number){
    final_result += parseInt(aswers[cur_question_number]);
    console.log("respondida a questão: " + cur_question_number + ", agora o valor das respostas é: "+aswers);
    curr_question.removeClass("question_active");
-   curr_progress = (progress / currNumQuestions)*100;
+   curr_progress = Math.floor( (progress / currNumQuestions)*100 );
    div_progress_bar.css("width", curr_progress+"%");
    progress_text.html(curr_progress+"% Complete");
    next_question = curr_question.next();
