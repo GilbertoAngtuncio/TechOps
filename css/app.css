@@ -13,6 +13,11 @@ body {
 	color: #fff;
 }
 
+.tech-panel{
+  background-color: #00FF00;
+  color: #000;
+}
+
 .margin-elements{
 	margin-top: 20px;
 }

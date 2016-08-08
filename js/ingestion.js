@@ -44,10 +44,10 @@ var template_tech =
 '<h4 class="pregunta-{{num}}">{{num}}. {{question}}</h4>'+
 '<p>Select the answer option that you consider correct: </p>'+
 '<ul id="tech-aswer-options-{{num}}" class="option-{{num}}">'+
-'<li class="a"><input type="radio" value="{{option-a.value}}" name="alternative-{{num}}" checked> {{option-a.aswer}}</input></li>'+
-'<li class="b"><input type="radio" value="{{option-b.value}}" name="alternative-{{num}}"> {{option-b.aswer}}</input></li>'+
-'<li class="c"><input type="radio" value="{{option-c.value}}" name="alternative-{{num}}"> {{option-c.aswer}}</input></li>'+
-'<li class="d"><input type="radio" value="{{option-d.value}}" name="alternative-{{num}}"> {{option-d.aswer}}</input></li>'+
+'<li class="a"><input type="radio" value="{{option-a.value}}" name="tech-alternative-{{num}}" checked> {{option-a.aswer}}</input></li>'+
+'<li class="b"><input type="radio" value="{{option-b.value}}" name="tech-alternative-{{num}}"> {{option-b.aswer}}</input></li>'+
+'<li class="c"><input type="radio" value="{{option-c.value}}" name="tech-alternative-{{num}}"> {{option-c.aswer}}</input></li>'+
+'<li class="d"><input type="radio" value="{{option-d.value}}" name="tech-alternative-{{num}}"> {{option-d.aswer}}</input></li>'+
 '</ul>'+
 '<div class="feedback">'+
 '{{feedback}}'+

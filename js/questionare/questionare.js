@@ -42,7 +42,7 @@ progress_text_tech = $(div_progress_bar_tech).first();
 
 function goToNextQuestionTech(cur_question_number_tech){
    curr_question_tech = $('#question-tech-'+cur_question_number_tech);
-   answers_tech[cur_question_number_tech] = $('input[name=alternative-'+cur_question_number_tech+']:checked', curr_question_tech).val();
+   answers_tech[cur_question_number_tech] = $('input[name=tech-alternative-'+cur_question_number_tech+']:checked', curr_question_tech).val();
    final_result_tech += parseInt(answers_tech[cur_question_number_tech]);
    console.log("respondida a questão: " + cur_question_number_tech + ", agora o valor das respostas é: "+answers_tech);
    curr_question_tech.removeClass("question_tech_active");
@@ -56,15 +56,15 @@ function goToNextQuestionTech(cur_question_number_tech){
       question_number_progress_tech.html( progress_tech+' / '+currNumQuestionsTech );
    }else{
       num_aswers_tech = answers_tech.length;      
-      sugestion = "strongly recommended to sale and ready to show in your institution or classroom"
-      if( final_result_tech > 12 )
+      sugestion_tech = "strongly recommended to sale and ready to show in your institution or classroom"
+      if( final_result_tech > 9 )
       {
         sugestion_tech = "strongly recommended";
       }else{
-        if (final_result_tech > 8) {
+        if (final_result_tech > 6) {
           sugestion_tech = "recommended";
         }else{
-          if (final_result_tech > 4) {
+          if (final_result_tech > 3) {
             sugestion_tech = "not recommended"
           };
         }
