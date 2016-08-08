@@ -18,27 +18,30 @@ $( document ).ready(function() {
 var template_questions = 
 
 '{{#marketing_questions}}'+
-'<div class="question-{{num}}">'+
-'<h4 class="pregunta-{{num}}">{{question}}</h4>'+
+'<div id="question-{{num}}" order="{{num}}" class="question showQuestion">'+
+'<h4 class="pregunta-{{num}}">{{num}}. {{question}}</h4>'+
 '<p>Responde con la opción que consideres correcta: </p>'+
-'<div class="option-{{num}}">'+
-'<div class="a">{{option-a}}</div>'+
-'<div class="b">{{option-b}}</div>'+
-'<div class="c">{{option-c}}</div>'+
-'<div class="d">{{option-d}}</div>'+
-'</div>'+
+'<ul id="aswer-options-{{num}}" class="option-{{num}}">'+
+'<li class="a"><input type="radio" value="{{option-a.value}}" name="alternative-{{num}}" checked> {{option-a.aswer}}</input></li>'+
+'<li class="b"><input type="radio" value="{{option-b.value}}" name="alternative-{{num}}"> {{option-b.aswer}}</input></li>'+
+'<li class="c"><input type="radio" value="{{option-c.value}}" name="alternative-{{num}}"> {{option-c.aswer}}</input></li>'+
+'<li class="d"><input type="radio" value="{{option-d.value}}" name="alternative-{{num}}"> {{option-d.aswer}}</input></li>'+
+'</ul>'+
 '<div class="feedback">'+
 '{{feedback}}'+
 '</div>'+
 '<div class="final-feedback">'+
 '{{final-feedback}}'+
 '</div>'+
-'<div class="siguiente_{{num}}">Next question</div>'+
+'<button class="btn btn-success orange siguiente_{{num}}" onclick="goToNextQuestion({{num}})">Next question</button>'+
 '</div>'+
 '{{/marketing_questions}}';
 
 var html = Mustache.to_html(template_questions, data);
-$('.marketing_questions').html(html);
+$.cookie( "numQuestions", data.marketing_questions.length );
+$('div.marketing_questions').html( html );
+$('#question-1').addClass("question_active");
+$('#question_number_progress').html( '1 / '+ data.marketing_questions.length );
 
 /*$('.ios_url_app, .android_url_app, .booktrailer, .url_venta_ecommerce, .url_venta_ebook, .url_guia_del_profesor, .booktrailer, .miniaturas_publicacion').tooltip({
 			track: true,
@@ -62,8 +65,8 @@ $('.marketing_questions').html(html);
 
 /////////////////////***********************/////////////////////////////////////////***********************////////////////////
 /////////////////////***********************/////////////////////////////////////////***********************////////////////////
-catalogoSerie( '.descripcion-titulo-1', '.cerrar-descripcion-titulo-1', '#cerrar-ventana-thumb-1', ".miniaturas_publicacion-1", "#block-1", ".booktrailer-1", "#block-thumb-1", "#cerrar-ventana-1", '.libro-1', "#tabs-min-1"   )
 
+//catalogoSerie( '.descripcion-titulo-1', '.cerrar-descripcion-titulo-1', '#cerrar-ventana-thumb-1', ".miniaturas_publicacion-1", "#block-1", ".booktrailer-1", "#block-thumb-1", "#cerrar-ventana-1", '.libro-1', "#tabs-min-1"   )
 
 })
 
